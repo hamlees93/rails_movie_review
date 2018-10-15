@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :reviews
-  resources :movies
+  resources :movies do
+    resources :reviews
+  end
   # get 'movies/index'
   # get 'movies/show/:id'
   # post 'movies/create'
